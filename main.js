@@ -9,6 +9,7 @@
 'use strict';
 
 /*** Event Listeners ***/
+document.getElementById("d4").addEventListener("click",roll_d4)
 document.getElementById("d6").addEventListener("click", roll_d6)
 document.getElementById("d8").addEventListener("click", roll_d8)
 document.getElementById("d10").addEventListener("click",roll_d10)
@@ -44,5 +45,10 @@ function roll_d12() {
 
 function roll_d20() { 
     let roll = randInt (1, 20)
+    document.getElementById("die_roll").textContent = roll
+}
+
+function roll_d4() { 
+    let roll = randInt (1, 4)
     document.getElementById("die_roll").textContent = roll
 }
