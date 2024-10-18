@@ -23,6 +23,11 @@ function randInt(min, max) {
 }
 
 
+function roll_d4() { 
+    let roll = randInt (1, 4)
+    document.getElementById("die_roll").textContent = roll
+}
+
 function roll_d6() { 
     let roll = randInt (1, 6)
     document.getElementById("die_roll").textContent = roll
@@ -48,7 +53,3 @@ function roll_d20() {
     document.getElementById("die_roll").textContent = roll
 }
 
-function roll_d4() { 
-    let roll = randInt (1, 4)
-    document.getElementById("die_roll").textContent = roll
-}
